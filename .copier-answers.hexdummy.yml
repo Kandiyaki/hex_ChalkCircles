@@ -1,0 +1,20 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+# https://copier.readthedocs.io/en/stable/configuring/#the-copier-answersyml-file
+_commit: v0.0.9
+_src_path: gh:FallingColors/hexdummy
+author: Kandiyaki
+capitalize_platforms: false
+classname: Hex_chalkcircles
+default_branch: main
+description: Hex Casting addon for single-use spell circles
+display_name: Hex Circles
+github_repo: hex_chalkcircles
+hexcasting_version: 0.10.3
+homepage_url: https://kandiyaki.github.io/hex_chalkcircles
+initial_mod_version: 0.0.1
+java_version: 17
+license: MIT
+mappings_name: Mojmap
+modid: hex_chalkcircles
+package: net.hex_chalkcircles
+sources_url: https://github.com/Kandiyaki/hex_chalkcircles

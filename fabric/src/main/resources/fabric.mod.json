@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "hex_chalkcircles",
+  "version": "${version}",
+  "name": "Hex Circles",
+  "description": "Hex Casting addon for single-use spell circles",
+  "authors": [
+    "Kandiyaki"
+  ],
+  "contact": {
+    "homepage": "https://kandiyaki.github.io/hex_chalkcircles",
+    "sources": "https://github.com/Kandiyaki/hex_chalkcircles"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.hex_chalkcircles.fabric.Hex_chalkcirclesFabric"
+    ],
+    "client": [
+      "net.hex_chalkcircles.fabric.Hex_chalkcirclesClientFabric"
+    ]
+  },
+  "mixins": [
+    "hex_chalkcircles-common.mixins.json",
+    "hex_chalkcircles.mixins.json"
+  ],
+  "depends": {
+    "minecraft": ">=${minecraftVersion}",
+    "fabricloader": ">=${fabricLoaderVersion}",
+    "fabric-api": "*",
+    "fabric-language-kotlin": ">=${fabricKotlinVersion}",
+    "architectury": ">=${architecturyVersion}",
+    "hexcasting": ">=${hexcastingVersion}"
+  }
+}
