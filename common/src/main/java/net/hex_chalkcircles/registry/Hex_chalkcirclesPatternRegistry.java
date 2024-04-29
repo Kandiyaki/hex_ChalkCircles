@@ -23,6 +23,7 @@ public class Hex_chalkcirclesPatternRegistry {
 
     public static void init() {
         try {
+        	//test commit
             for (Triple<HexPattern, ResourceLocation, Action> patternTriple : PATTERNS) {
                 PatternRegistry.mapPattern(patternTriple.getFirst(), patternTriple.getSecond(), patternTriple.getThird());
             }
