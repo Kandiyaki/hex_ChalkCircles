@@ -1,5 +1,10 @@
 package net.hex_chalkcircles.registry;
 
+import static net.hex_chalkcircles.Hex_chalkcircles.id;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import at.petrak.hexcasting.api.PatternRegistry;
 import at.petrak.hexcasting.api.spell.Action;
 import at.petrak.hexcasting.api.spell.math.HexDir;
@@ -8,11 +13,6 @@ import kotlin.Triple;
 import net.hex_chalkcircles.casting.patterns.math.OpSignum;
 import net.hex_chalkcircles.casting.patterns.spells.OpCongrats;
 import net.minecraft.resources.ResourceLocation;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import static net.hex_chalkcircles.Hex_chalkcircles.id;
 
 public class Hex_chalkcirclesPatternRegistry {
     public static List<Triple<HexPattern, ResourceLocation, Action>> PATTERNS = new ArrayList<>();
