@@ -30,6 +30,6 @@ public class Hex_chalkcirclesItemRegistry {
 
     // During the loading phase, refrain from accessing suppliers' items (e.g. EXAMPLE_ITEM.get()), they will not be available
     public static final RegistrySupplier<Item> CHALKSTICK_ITEM = ITEMS.register("amethyst_chalk", () -> new ItemChalkStick(CHALKCIRCLES_16STACK));
-    public static final RegistrySupplier<BlockItem> CHALKSQUARE_ITEM = ITEMS.register("chalk_square_item", () -> new BlockItem(Hex_chalkcirclesBlockRegistry.CHALK_RUNE.get(), CHALKCIRCLES_64STACK));
+    public static final RegistrySupplier<BlockItem> CHALKSQUARE_BLOCK_ITEM = ITEMS.register("chalk_square_block", () -> new BlockItem(Hex_chalkcirclesBlockRegistry.CHALK_RUNE.get(), CHALKCIRCLES_64STACK));
 
 }
