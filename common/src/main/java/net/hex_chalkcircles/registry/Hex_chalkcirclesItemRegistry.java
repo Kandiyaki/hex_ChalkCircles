@@ -8,7 +8,6 @@ import dev.architectury.registry.registries.RegistrySupplier;
 import net.hex_chalkcircles.Hex_chalkcircles;
 import net.hex_chalkcircles.item.*;
 import net.minecraft.core.Registry;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -16,7 +15,6 @@ import net.minecraft.world.item.ItemStack;
 public class Hex_chalkcirclesItemRegistry {
     // Register items through this
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Hex_chalkcircles.MOD_ID, Registry.ITEM_REGISTRY);
-    private static final Item.Properties CHALKCIRCLES_64STACK = new Item.Properties().stacksTo(64);
     private static final Item.Properties CHALKCIRCLES_16STACK = new Item.Properties().stacksTo(16);
     private static final Item.Properties CHALKCIRCLES_UNSTACKABLE = new Item.Properties().stacksTo(1);
 
@@ -30,6 +28,6 @@ public class Hex_chalkcirclesItemRegistry {
 
     // During the loading phase, refrain from accessing suppliers' items (e.g. EXAMPLE_ITEM.get()), they will not be available
     public static final RegistrySupplier<Item> CHALKSTICK_ITEM = ITEMS.register("amethyst_chalk", () -> new ItemChalkStick(CHALKCIRCLES_16STACK));
-    public static final RegistrySupplier<BlockItem> CHALKSQUARE_ITEM = ITEMS.register("chalk_square_item", () -> new BlockItem(Hex_chalkcirclesBlockRegistry.CHALK_RUNE.get(), CHALKCIRCLES_64STACK));
+
 
 }
