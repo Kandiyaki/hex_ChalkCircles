@@ -6,7 +6,7 @@ public class BlockDustRune extends BlockSlate {
 
 	public BlockDustRune(Properties p_53182_) {
 		super(p_53182_);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 }
