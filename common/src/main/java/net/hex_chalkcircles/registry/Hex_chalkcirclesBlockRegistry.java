@@ -8,6 +8,7 @@ import net.hex_chalkcircles.Hex_chalkcircles;
 import net.hex_chalkcircles.blocks.BlockDustRune;
 import net.minecraft.core.Registry;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 
@@ -27,5 +28,5 @@ public class Hex_chalkcirclesBlockRegistry {
     // A new creative tab. Notice how it is one of the few things that are not deferred
 
     // During the loading phase, refrain from accessing suppliers' items (e.g. EXAMPLE_ITEM.get()), they will not be available
-    public static final RegistrySupplier<Block> CHALK_RUNE = BLOCKS.register("chalk_square_block", () -> new BlockDustRune(null));
+    public static final RegistrySupplier<Block> CHALK_RUNE = BLOCKS.register("chalk_square_block", () -> new BlockDustRune(BlockBehaviour.Properties.of(Material.TOP_SNOW)));
 }
