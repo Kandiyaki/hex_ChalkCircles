@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.AbstractGlassBlock;
+import at.petrak.hexcasting.api.block.circle.*;
 
 
 public class Hex_chalkcirclesBlockRegistry {
@@ -33,6 +34,6 @@ public class Hex_chalkcirclesBlockRegistry {
     // A new creative tab. Notice how it is one of the few things that are not deferred
 
     // During the loading phase, refrain from accessing suppliers' items (e.g. EXAMPLE_ITEM.get()), they will not be available
-    public static final RegistrySupplier<Block> CHALK_RUNE = BLOCKS.register("chalk_square_block", () -> new BlockDustRune(BlockBehaviour.Properties.copy(Blocks.ACACIA_BUTTON)));
+    public static final RegistrySupplier<Block> CHALK_RUNE = BLOCKS.register("chalk_square_block", () -> new BlockDustRune(BlockBehaviour.Properties.of(Material.AMETHYST).noOcclusion()));
 
 }
