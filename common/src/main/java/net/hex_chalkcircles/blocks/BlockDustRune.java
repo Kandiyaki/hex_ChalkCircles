@@ -8,6 +8,8 @@ public class BlockDustRune extends BlockSlate {
 		super(p_53182_);
 		
 	}
+	
+	
 
 	
 }

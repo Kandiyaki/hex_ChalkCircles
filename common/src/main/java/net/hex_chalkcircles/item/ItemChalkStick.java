@@ -1,24 +1,41 @@
 package net.hex_chalkcircles.item;
 
 import at.petrak.hexcasting.common.items.ItemStaff;
+
 import at.petrak.hexcasting.common.lib.HexSounds;
 import at.petrak.hexcasting.common.network.MsgOpenSpellGuiAck;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+
+import net.hex_chalkcircles.registry.Hex_chalkcirclesBlockRegistry;
 
 
-public class ItemChalkStick extends ItemStaff {
+public class ItemChalkStick extends AbstractChalkBlockItem {
+	
+	private static final Block BLOCK_DUST_RUNE= Hex_chalkcirclesBlockRegistry.CHALK_RUNE.get();
+
 
 	public ItemChalkStick(Properties pProperties) {
-		super(pProperties);
+		super(BLOCK_DUST_RUNE, pProperties);
 	}
 
+	@Override
+	public InteractionResult place(BlockPlaceContext blockplacecontext) {
+		//TODO call the casting grid and wait until an iota is passed
+		return super.place(blockplacecontext);
+		
+		
+	}
+	
 	
 	@Override
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
